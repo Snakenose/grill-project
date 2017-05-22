@@ -1,0 +1,38 @@
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+   font-size: x-large; 
+}
+
+.category{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 12px 28px;
+    transition-duration: 0.6s;
+    width: 125px;
+
+
+}
+
+.category:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+div.panel-body{
+    background-color: orange
+
+}
+
+.table {
+    border-radius: 5px;
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+}

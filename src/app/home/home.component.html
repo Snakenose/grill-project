@@ -1,0 +1,85 @@
+<div class="panel panel-primary">
+
+    <div class="panel-body"  >
+        <div class="row" >
+            <img src="./app/assets/images/grill.jpg" 
+                 class="img-responsive center-block"
+                 style="max-height:300px;padding-bottom:50px"/>
+        </div>
+        <div class="text-center">
+            <div class="buttons" *ngIf="buttonvis">
+                <button class='category' (click)="beef()">Beef</button><br /><br />
+                <button class='category' (click)="chicken()">Chicken</button><br /><br />
+                <button class='category' (click)="pork()">Pork</button><br />
+
+            </div>
+
+            <div class="row" *ngIf="beefvis">
+                <table class="table table-hover text-centered">
+                    <tr>
+                        <td>Rare:</td>
+                        <td>{{beefmodel.rare}}</td>
+                    </tr>
+                    <tr>
+                        <td>Medium Rare:</td>
+                        <td>{{beefmodel.mediumRare}}</td>
+                    </tr>
+                    <tr>
+                        <td>Medium:</td>
+                        <td>{{beefmodel.medium}}</td>
+                    </tr>
+                    <tr>
+                        <td>Well:</td>
+                        <td>{{beefmodel.well}}</td>
+                    </tr>
+
+                </table>
+                <button class="category" (click)="back()">Back</button>
+            </div>
+            <div class="chickeninfo" *ngIf="chickenvis">
+                <table class="table table-hover text-centered">
+                    <tr>
+                        <td>Medium:</td>
+                        <td>{{chickenmodel.medium}}</td>
+                    </tr>
+                    <tr>
+                        <td>Well:</td>
+                        <td>{{chickenmodel.well}}</td>
+                    </tr>
+
+                </table>
+                <button class="category" (click)="back()">Back</button>
+            </div>
+            <div class="porkinfo" *ngIf="porkvis">
+                <table class="table table-hover text-centered">
+                    <tr>
+                        <td>Medium:</td>
+                        <td>{{porkmodel.medium}}</td>
+                    </tr>
+                    <tr>
+                        <td>Well:</td>
+                        <td>{{porkmodel.well}}</td>
+                    </tr>
+                    <tr>
+                        <td>Ribs, Shoulder</td>
+                        <td>{{porkmodel.ribs}}</td>
+                    </tr>
+
+                </table>
+                <button class="category" (click)="back()">Back</button>
+            </div>
+        </div>
+        <div class="row"  >
+            <br />
+            <div class="text-center">Developed by:</div>
+            <h3 class="text-center">James Fahn</h3>
+            <div class="row" >
+            <a href="http://amazingribs.com/tips_and_technique/meat_temperature_guide.html" target="empty">
+                <img src="./app/assets/images/pork.png" 
+                 class="img-responsive center-block"
+                 style="max-height:200px;padding-bottom:50px"/>
+                 </a>
+        </div>
+        </div>
+    </div>
+</div>
